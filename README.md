@@ -3,9 +3,9 @@ CropiPhoneCameraView
 
 3.5-inch 及 4-inch 的 iPhone 皆顯示 3:4 的 camera view
 
-主要處理部分如下：
+主要處理部分：
 
-
+```
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     UIImage *originalImage = [info objectForKey:UIImagePickerControllerOriginalImage];
@@ -50,3 +50,4 @@ CropiPhoneCameraView
         [self.view addSubview:imageView];
     }];
 }
+```
